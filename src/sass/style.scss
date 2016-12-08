@@ -27,6 +27,9 @@ html, body{
 			display: block;
 		}
 }
+.title{
+	font-size: 36px;
+}
 
 /* ====HEADER==== */
 .header-top{
@@ -125,7 +128,9 @@ html, body{
 
 	}
 	&__item{
-			
+		&:first-child .nav__link:before{
+			width: 0;
+		}
 	}
 	&__link{
 		color: #fefefe;
@@ -138,7 +143,7 @@ html, body{
 		&:before{
 			content: "";
 			position: absolute;
-			background: url(../img/sep2.png) no-repeat;
+			background: #434343;
 			width: 2px;
 			height: 19px;
 			left:-13px;
@@ -151,8 +156,228 @@ html, body{
 }
 
 
+/* ====Tree==== */
+
+.tree{
+	font-size: 12px;
+	padding: 15px 0;
+	
+	&__list{
+		li{
+			display: inline-block;
+			&:not(:last-of-type)::after{
+				content:url(../img/tree-arrow.png);
+				font-weight: bold;
+				color: #ea6355;
+				text-transform: uppercase;
+				padding: 0 5px ;
+			}
+
+
+		}
+	}
+
+	&__link{
+		color: #2e2e2e;
+		&:hover{
+			color: #000;
+		}
+	}
+}
+
+/* =======main-1========== */
+
+.main-1{
+
+	&__top{
+		display: flex;
+		display: -webkit-flex;
+		margin-top: 25px;
+		margin-bottom: 20px;
+	}
+	
+	
+	&__rating{		
+		direction: rtl;
+		text-align: left;
+		margin-top: 10px;
+
+		& > span{
+			display: inline-block;
+ 			position: relative;
+  			width: 1.1em;
+  			padding: 0 3px;
+		}
+
+  		& > span:hover:before {
+			content: url(../img/rait-star-hov.png);
+			position: absolute;
+  		}
+  		
+  		& > span:hover ~ span:before {
+			content: url(../img/rait-star-hov.png);
+			position: absolute;
+  		}
+	}
+		
+	&__services{
+			display: flex;
+			display: -webkit-flex;
+			flex-wrap: wrap;
+			margin-top: 40px;
+	}	
+
+	&__link{
+			padding: 50px 0 40px;
+			width: 400px;
+			display: flex;
+			display: -webkit-flex;
+			align-items: center;
+			justify-content: center;
+			border: 2px solid transparent;
+			span{
+				width: 130px;
+				color: #2e2e2e;
+			}
+
+			img{
+				padding-right: 45px;
+			}
+
+			&:nth-of-type(1){
+				border-right: 1px solid #f4f4f4;
+				border-bottom: 1px solid #f4f4f4;
+			}
+			&:nth-of-type(2){
+				border-left: 1px solid #f4f4f4;
+				border-bottom: 1px solid #f4f4f4;
+			}
+			&:nth-of-type(3){
+				border-right: 1px solid #f4f4f4;
+				border-top: 1px solid #f4f4f4;
+			}
+			&:nth-of-type(4){
+				border-left: 1px solid #f4f4f4;
+				border-top: 1px solid #f4f4f4;
+			}
+			&:hover{
+				border: 2px solid #e74c3c;
+			}
+
+	}
+
+	&__bot{
+		display: flex;
+		display: -webkit-flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 50px;
+		.title{
+			margin: 10px 0;
+
+			img{
+				position: relative;
+				top: 15px;
+				padding-right: 25px;
+			}
+		}
+	}
+
+	&__btn{
+		width: 370px;
+		display: block;
+		padding: 19px 0;
+		text-align: center;
+		font-weight: bold;
+		background-color: #e74c3c;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 14px;
+		border-radius: 44px;
+		margin-top:23px;
+	}
+}
+
+/* =======main-2========== */
+
+.main-2{
+	background-color: #f3f3f3;
+
+	&__body{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	&__option{
+		padding: 50px 22px;
+		text-align: center;
+
+	}
+	
+	&__img{
+		padding-bottom: 25px;
+	}
+
+	&__text{
+		width: 140px;
+		text-align: center;
+		font-size: 12px;
+		text-transform: uppercase;
+		color: #2e2e2e;
+	}
+}
+
+/* =======main-3========== */
+
+.main-3{
+	&__table{
+		margin-top: 90px;
+		margin-bottom: 25px;
+		width: 100%;
+		td, th{
+			text-align: left;
+			padding-top: 18px;
+			padding-bottom: 30px;
+		}
+		
+		thead{
+			background: #dbdbdb;
+		}
+
+		.th--grey{
+			background-color: #f1f1f1;
+		}
+	}
+
+	&__desc{
+		padding-left: 30px;
+		color: #7f7f7f;
+	}
+
+	&__cost{
+		font-weight: bold;
+		padding-right: 100px;
+		
+		&--none{
+			color: #7f7f7f;
+			text-decoration: line-through;
+			&:after{
+				content:"*";
+			}
+		}	
+	}
+	
+	&__time{
+		padding-right: 60px;
+	}
+}
 
 /* ====FOOTER==== */
+
 .footer{
 	margin-top: 10px;
 	background: #2e2e2e;
