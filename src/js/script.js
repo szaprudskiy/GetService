@@ -3,10 +3,7 @@ $(function(){
 	$('.slider').slick({
 	  infinite: true,
 	  arrows: true,
-	  dots: true,
-	  slidesToShow: 3,
-	  slidesToScroll: 3
-});
-
-	
+	  slidesToShow: 4,
+	  slidesToScroll: 4
+	});
 })
