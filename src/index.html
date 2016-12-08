@@ -3,10 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/jquery.fancybox-buttons.css">
+	<link rel="stylesheet" href="css/jquery.fancybox-thumbs.css">
 	
 </head>
 <body>
@@ -19,7 +22,7 @@
 					</div>
 					<ul class="info">
 						<li class="info__item"><a class="info__link" href="#">Акции</a></li>
-						<li class="info__item"><a class="info__link" href="#">Блок</a></li>
+						<li class="info__item"><a class="info__link" href="#">Блог</a></li>
 						<li class="info__item"><a class="info__link" href="#">Доставка</a></li>
 					</ul>
 					<div class="contacts">
@@ -58,7 +61,9 @@
 		</div>
 	</header>
 	<main>
+
 	<div class="container">
+
 			<div class="tree">
 				<ul class="tree__list">
 					<li>
@@ -332,6 +337,7 @@
 				</div>
 			</div>
 		</div>
+
 	</div>
 	<div class="main-5">
 		<div class="container">
@@ -364,13 +370,26 @@
 		</div>
 	</div>
 	<div class="container">
-		<div class="slider">
-		  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium soluta dicta tenetur doloremque, voluptas cum, eos ab rem praesentium, officia dolor veniam harum dolorum similique aspernatur nesciunt hic autem! Provident.</div>
-		  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut doloremque quasi repudiandae nulla eaque recusandae saepe cupiditate hic atque veritatis? Possimus dolore, repellendus veritatis omnis libero incidunt laudantium tenetur quasi!</div>
-		  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut doloremque quasi repudiandae nulla eaque recusandae saepe cupiditate hic atque veritatis? Possimus dolore, repellendus veritatis omnis libero incidunt laudantium tenetur quasi!</div>
-		  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut doloremque quasi repudiandae nulla eaque recusandae saepe cupiditate hic atque veritatis? Possimus dolore, repellendus veritatis omnis libero incidunt laudantium tenetur quasi!</div>
-		  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut doloremque quasi repudiandae nulla eaque recusandae saepe cupiditate hic atque veritatis? Possimus dolore, repellendus veritatis omnis libero incidunt laudantium tenetur quasi!</div>
-		</div>
+			<h4 class="popup-title">Фото и видео материалы</h4>
+			<div class="popup-slider">
+				<a class="fancybox-thumb" rel="fancybox-thumb	" href="https://www.youtube.com/watch?v=76g88fSU4VQ" title="Golden Manarola (Sanjeev Deo)">
+					<img src="http://farm6.staticflickr.com/5444/17679973232_568353a624_m.jpg" alt="" />
+				</a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_b.jpg" title="Codirosso spazzacamino (Massimo Greco _Foligno)">
+					<img src="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_m.jpg" alt="" />
+				</a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm6.staticflickr.com/5612/15344856989_449794889d_b.jpg" title="Morning Twilight (Jose Hamra Images)">
+					<img src="http://farm6.staticflickr.com/5612/15344856989_449794889d_m.jpg" alt="" />
+				</a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7289/16207238089_0124105172_b.jpg" title="(Eric Goncalves (cathing up again!))">
+					<img src="http://farm8.staticflickr.com/7289/16207238089_0124105172_m.jpg" alt="" />
+				</a>
+				<a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7289/16207238089_0124105172_b.jpg" title="(Eric Goncalves (cathing up again!))">
+					<img src="http://farm8.staticflickr.com/7289/16207238089_0124105172_m.jpg" alt="" />
+				</a>
+				<a class="popup-slider__link popup-slider__prev" href="">prev</a>
+				<a class="popup-slider__link popup-slider__next" href="">next</a>
+			</div>
 	</div>
 	<div class="models-slider">
 		<div class="container">
@@ -422,7 +441,7 @@
 		</div>
 	</div>	
 	<div class="main-break">
-			<div class="container">
+		<div class="container">
 				<p class="main-break__title">
 					Частые поломки
 				</p>
@@ -523,8 +542,8 @@
 						</p>
 					</a>
 				</div>
-			</div>
-		</div>	
+		</div>
+	</div>	
 	</main>
 	<footer>
 		<div class="footer">
@@ -575,13 +594,18 @@
 							</ul>
 						</div>
 				</div>
-					
-
 			</div>
 		</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<script src="js/jquery.fancybox-buttons.js"></script>
+	<script src="js/jquery.fancybox-media.js"></script>
+	<script src="js/jquery.fancybox-thumbs.js"></script>
 	<script src="js/slick.min.js"></script>
+	
 	<script src="js/script.js"></script>
 </body>
 </html>

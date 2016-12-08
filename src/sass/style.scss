@@ -117,18 +117,18 @@ html, body{
 
 	}
 	&__item{
+
 		border-right: 2px solid #434343;
+
 	}
 	&__link{
 		color: #fefefe;
 		font-family: "RobotoRegular";
 		padding: 20px 46px;
 		&:hover{
-
 			color: #e74c3c;
-
-
 		}
+		
 		
 	}
 }
@@ -141,8 +141,6 @@ html, body{
 		}
 	}
 }
-
-
 
 /* ====Tree==== */
 
@@ -555,6 +553,35 @@ html, body{
 
 	&__img{
 		height: 58px;
+	}
+}
+
+
+
+/* ====popup-gallery====*/ 
+.popup-title{
+	text-align: center;
+	font-size: 28px;
+	color: #2e2e2e;
+	font-weight: normal;
+	margin-bottom: 35px;
+}
+.popup-slider{
+	display: flex;
+	justify-content: space-between;
+	.fancybox-thumb{
+		padding: 0 10px;
+	}
+	.fancybox-thumb:first-child{
+		padding: 0;
+	}
+	.fancybox-thumb:last-child{
+		padding: 0;
+	}
+	.fancybox-thumb img{
+		max-width: 100%;
+		height: auto;
+
 	}
 }
 
