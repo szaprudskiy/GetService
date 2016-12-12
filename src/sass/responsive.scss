@@ -1,0 +1,158 @@
+@media screen and (max-width: 743px){
+	.container{
+		max-width:  320px;
+	}
+	.header-top{
+		padding: 0;
+	}
+	.header-df{
+		display: block;
+		.logo{
+			display: flex;
+    		justify-content: space-around;
+    		align-items: center;
+    		border-bottom: 2px solid #d5d5d5;
+    		padding: 10px 0;
+    		.burger{
+    			&__item{
+				    position: relative;
+				    overflow: hidden;
+				    width: 25px;
+				    height: 18px;
+				    font-size: 0;
+				    text-indent: -9999px;
+				    -webkit-appearance: none;
+				    -moz-appearance: none;
+				    appearance: none;
+				    box-shadow: none;
+				    border-radius: none;
+				    border: none;
+				    cursor: pointer;
+				    background: none;
+				    span{
+				    	display: block;
+					    position: absolute;
+					    top: 8px;
+					    left: 0px;
+					    right: 0px;
+					    height: 2px;
+					    background: #ff0000;
+				    	&:before{
+							position: absolute;
+						    display: block;
+						    left: 0;
+						    width: 100%;
+						    height: 2px;
+						    background-color: #ff0000;
+						    content: "";
+						    top: -6px;
+						    transition: .3s;
+				    	}
+				    	&:after{
+							position: absolute;
+						    display: block;
+						    left: 0;
+						    width: 100%;
+						    height: 2px;
+						    background-color: #ff0000;
+						    content: "";
+						    top: 6px;
+						    transition: .3s;
+				    	}
+				    }
+    			}
+    		}
+		}
+		.info{
+			display: none;
+		}
+		.contacts{
+			&__img{
+				border-color: transparent;
+				&:before{
+					left: -16px;
+				}
+			}
+		}
+		.header-container-mobile {
+    		display: flex;
+    		justify-content: space-around;
+    		align-items: flex-end;
+    		border-bottom: 2px solid #d5d5d5;
+    		padding: 10px 0 20px;
+		}
+		.application {
+		    display: none;
+		}
+	}
+	.header-bot{
+		display: none;
+	}
+	.tree{
+		border-bottom: 2px solid #d5d5d5;
+		.tree__list{
+			display: none;
+		}
+	}
+	
+	.tree__link{
+		position: relative;
+		margin-left: 30px;
+		&:before{
+			content: "";
+			position: absolute;
+			background: url(../img/tree-arrow-left.png) no-repeat;
+			width: 8px;
+			height: 14px;
+			left: -13px;
+			top: 2px;
+		}
+	}
+	.main-1__top{
+		position: relative;
+
+	}
+	.main-1__pict{
+		margin-top: 145px;
+	}
+	.main-1__services{
+		display: none;
+	}
+	.main-1__mobile{
+		position: absolute;
+		top: 0;
+		left:0;
+		.title{
+			font-size: 28px;
+		}
+	}
+	
+	.main-1__bot .title{
+		font-size: 28px;
+	}
+	.main-3__table{
+		display: none;
+	}
+	.main-3-mobile{
+		&__services{
+			font-family: "OpenSansBold";
+			padding: 24px 0;
+			background: #dbdbdb;
+		}
+	}
+	.main-3-container{
+		padding: 0 38px 0 21px;
+	}
+
+}
+
+
+@media screen and  (min-width: 744px){
+	.logo{
+		.burger{
+			display: none;
+		}
+	}
+	
+
+}

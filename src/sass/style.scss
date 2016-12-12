@@ -16,7 +16,7 @@ button{
 
 html, body{
 	font: 14px 'OpenSansRegular', sans-serif;
-	
+	overflow-x: hidden;
 }
 .container{
 	width: 100%;
@@ -62,15 +62,18 @@ html, body{
 	}
 	
 }
+.header-container-mobile{
+	display: flex;
+	align-items: center;
+}
 .contacts{
 	font-family: "RobotoRegular";
 	font-size: 12px;
 	color: #2e2e2e;
-	    padding-left: 20px;
 	&__img{
 		position: relative;
 		border-right: 2px solid #d5d5d5;
-		padding-right: 38px;
+		padding-right: 30px;
 		&:before{
 			content: "";
 			position: absolute;
@@ -88,6 +91,8 @@ html, body{
 	font-family: "RobotoRegular";
 	font-size: 12px;
 	color: #2e2e2e;
+	position: relative;
+    left: 20px;
 }
 .application{
 	font-size: 12px;
@@ -173,14 +178,12 @@ html, body{
 /* =======main-1========== */
 
 .main-1{
-
 	&__top{
 		display: flex;
 		display: -webkit-flex;
 		margin-top: 25px;
 		margin-bottom: 20px;
 	}
-	
 	
 	&__rating{		
 		direction: rtl;
@@ -255,6 +258,7 @@ html, body{
 		display: flex;
 		display: -webkit-flex;
 		align-items: center;
+		flex-wrap:wrap;
 		justify-content: space-between;
 		margin-bottom: 50px;
 		.title{
@@ -294,6 +298,7 @@ html, body{
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 	}
 	
@@ -358,34 +363,6 @@ html, body{
 	
 	&__time{
 		padding-right: 60px;
-	}
-}
-
-
-/* ====popup-gallery====*/ 
-.popup-title{
-	text-align: center;
-	font-size: 28px;
-	color: #2e2e2e;
-	font-weight: normal;
-	margin-bottom: 35px;
-}
-.popup-slider{
-	display: flex;
-	justify-content: space-between;
-	.fancybox-thumb{
-		padding: 0 10px;
-	}
-	.fancybox-thumb:first-child{
-		padding: 0;
-	}
-	.fancybox-thumb:last-child{
-		padding: 0;
-	}
-	.fancybox-thumb img{
-		max-width: 100%;
-		height: auto;
-
 	}
 }
 /* ====FOOTER==== */
