@@ -5,15 +5,15 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css">
 	<link rel="stylesheet" href="css/jquery.fancybox-buttons.css">
 	<link rel="stylesheet" href="css/jquery.fancybox-thumbs.css">
-	
+	<link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-	 <header> 
+	 <header > 
 		<div class="header-top">
 			<div class="container">
 				<div class="header-df">
@@ -369,28 +369,51 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
+	<div class="photo-slider">
+		<div class="container">
 			<h4 class="popup-title">Фото и видео материалы</h4>
-			<div class="popup-slider">
-				<a class="fancybox-thumb" rel="fancybox-thumb	" href="https://www.youtube.com/watch?v=76g88fSU4VQ" title="Golden Manarola (Sanjeev Deo)">
-					<img src="http://farm6.staticflickr.com/5444/17679973232_568353a624_m.jpg" alt="" />
-				</a>
-				<a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_b.jpg" title="Codirosso spazzacamino (Massimo Greco _Foligno)">
-					<img src="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_m.jpg" alt="" />
-				</a>
-				<a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm6.staticflickr.com/5612/15344856989_449794889d_b.jpg" title="Morning Twilight (Jose Hamra Images)">
-					<img src="http://farm6.staticflickr.com/5612/15344856989_449794889d_m.jpg" alt="" />
-				</a>
-				<a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7289/16207238089_0124105172_b.jpg" title="(Eric Goncalves (cathing up again!))">
-					<img src="http://farm8.staticflickr.com/7289/16207238089_0124105172_m.jpg" alt="" />
-				</a>
-				<a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7289/16207238089_0124105172_b.jpg" title="(Eric Goncalves (cathing up again!))">
-					<img src="http://farm8.staticflickr.com/7289/16207238089_0124105172_m.jpg" alt="" />
-				</a>
+			<div class="popup-slider__container">
+				<div class="popup-slider">
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="https://youtu.be/KkzVFB3Ba_o">
+						
+						<iframe  src="https://www.youtube.com/embed/KkzVFB3Ba_o" frameborder="0" allowfullscreen></iframe>
+					</a>
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_b.jpg" >
+						<img src="img/popup-img1.png" alt="" />
+					</a>
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm6.staticflickr.com/5612/15344856989_449794889d_b.jpg" >
+						<img src="img/popup-img2.png" alt="" />
+					</a>
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7289/16207238089_0124105172_b.jpg" >
+						<img src="img/popup-img3.png" alt="" />
+					</a>
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7289/16207238089_0124105172_b.jpg" >
+						<img src="http://farm8.staticflickr.com/7289/16207238089_0124105172_m.jpg" alt="" />
+					</a>
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="https://youtu.be/KkzVFB3Ba_o">
+						
+						<iframe  src="https://www.youtube.com/embed/KkzVFB3Ba_o" frameborder="0" allowfullscreen></iframe>
+					</a>
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_b.jpg" >
+						<img src="img/popup-img1.png" alt="" />
+					</a>
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm6.staticflickr.com/5612/15344856989_449794889d_b.jpg" >
+						<img src="img/popup-img2.png" alt="" />
+					</a>
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7289/16207238089_0124105172_b.jpg" >
+						<img src="img/popup-img3.png" alt="" />
+					</a>
+					<a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7289/16207238089_0124105172_b.jpg" >
+						<img src="http://farm8.staticflickr.com/7289/16207238089_0124105172_m.jpg" alt="" />
+					</a>
+
+					
+				</div>
 				<a class="popup-slider__link popup-slider__prev" href="">prev</a>
-				<a class="popup-slider__link popup-slider__next" href="">next</a>
+					<a class="popup-slider__link popup-slider__next" href="">next</a>
 			</div>
-	</div>
+		</div>
+	</div>	
 	<div class="models-slider">
 		<div class="container">
 		<div class="models-slider__title">
@@ -597,7 +620,11 @@
 			</div>
 		</div>
 	</footer>
+<!-- 	<div class="popup-gallery__back">
+	
+</div> -->
 	<script src="js/jquery.min.js"></script>
+	<script src="js/script.js"></script>
 	<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
 	<script src="js/jquery.fancybox.js"></script>
 	<script src="js/jquery.fancybox.pack.js"></script>
@@ -606,6 +633,5 @@
 	<script src="js/jquery.fancybox-thumbs.js"></script>
 	<script src="js/slick.min.js"></script>
 	
-	<script src="js/script.js"></script>
 </body>
 </html>

@@ -12,7 +12,6 @@
 
 (function (window, document, $, undefined) {
 	"use strict";
-
 	var H = $("html"),
 		W = $(window),
 		D = $(document),
@@ -393,6 +392,7 @@
 
 		// Start closing animation if is open; remove immediately if opening/closing
 		close: function (event) {
+			console.log(14);
 			F.cancel();
 
 			if (false === F.trigger('beforeClose')) {
@@ -1756,7 +1756,7 @@
 
 		close : function() {
 			var scrollV, scrollH;
-
+			
 			W.unbind('resize.overlay');
 
 			if (this.el.hasClass('fancybox-lock')) {
@@ -1769,9 +1769,13 @@
 
 				W.scrollTop( scrollV ).scrollLeft( scrollH );
 			}
-
+				
 			$('.fancybox-overlay').remove().hide();
-
+				$('.fancybox-overlay-fixed, .fancybox-close').click(function(){
+		$('main').removeClass('blur');
+		console.log('bue');
+	});
+			console.log(2);
 			$.extend(this, {
 				overlay : null,
 				fixed   : false
