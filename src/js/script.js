@@ -31,6 +31,7 @@ $(document).ready(function() {
 
 	});
 
+
 	
 	var width = 300;
 	var currentSlide = 1;
@@ -65,6 +66,7 @@ $(document).ready(function() {
 			$slideContainer.animate({'margin-left': '+='+width}, 500)
 		}
 	});	
+
 
 	
 });

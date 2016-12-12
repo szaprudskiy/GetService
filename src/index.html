@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/responsive.css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css">
 	<link rel="stylesheet" href="css/jquery.fancybox-buttons.css">
 	<link rel="stylesheet" href="css/jquery.fancybox-thumbs.css">
@@ -18,23 +20,32 @@
 			<div class="container">
 				<div class="header-df">
 					<div class="logo">
-						<a href="#"><img src="img/logo.png" alt=""></a>
+						<a href="#">
+							<picture>
+						         <source srcset="img/mobile-logo.png" media="(max-width: 743px)" >
+						         <img src="img/logo.png" alt="">
+						    </picture>
+						</a>
+
+						<div class="burger"><button class="burger__item"><span>12</span></button></div>
 					</div>
-					<ul class="info">
-						<li class="info__item"><a class="info__link" href="#">Акции</a></li>
-						<li class="info__item"><a class="info__link" href="#">Блог</a></li>
-						<li class="info__item"><a class="info__link" href="#">Доставка</a></li>
-					</ul>
-					<div class="contacts">
-						<p>+38 (063) 010-16-00</p>
-						<p class="contacts__img">+38 (098) 327-00-70</p>
-						<p>+38 (044) 222-51-52</p>
-					</div>
-					<div class="adress">
-						<p><img src="img/adress.png" alt=""></p>
-						<p>м. Дорогожичи</p>
-						<p>Елены Телиги 25А</p>
-					</div>
+						<ul class="info">
+							<li class="info__item"><a class="info__link" href="#">Акции</a></li>
+							<li class="info__item"><a class="info__link" href="#">Блог</a></li>
+							<li class="info__item"><a class="info__link" href="#">Доставка</a></li>
+						</ul>
+					<div class="header-container-mobile">	
+						<div class="contacts">
+							<p>+38 (063) 010-16-00</p>
+							<p class="contacts__img">+38 (098) 327-00-70</p>
+							<p>+38 (044) 222-51-52</p>
+						</div>
+						<div class="adress">
+							<p><img src="img/adress.png" alt=""></p>
+							<p>м. Дорогожичи</p>
+							<p>Елены Телиги 25А</p>
+						</div>
+					</div>	
 					<div class="application">
 						<a class="application__link" href="#">Заявка на ремонт</a>
 					</div>
@@ -79,23 +90,37 @@
 						<a  class="tree__link">Ремонт телефонов Apple iPhone</a>
 					</li>
 				</ul>
+				<a  class="tree__link">Ремонт телефонов Apple iPhone</a>
 			</div>
 			<div class="main-1">
-				<div class="main-1__top">		
-					<div class="main-1__pict">
-						<img src="img/main-1-mob.jpg" alt="">
-					</div>
-					<div class="main-1__content">
-						<p class="title">
-							Ремонт Apple iPhone 4s в Киеве
-						</p>
-						<div class="main-1__rating">
-							<span><img src="img/rait-star.png" alt=""></span>
-							<span><img src="img/rait-star.png" alt=""></span>
-							<span><img src="img/rait-star.png" alt=""></span>
-							<span><img src="img/rait-star.png" alt=""></span>
-							<span><img src="img/rait-star.png" alt=""></span>
+				<div class="main-1__top">
+					<div class="main-1__slider-mobile">
+						<div class="main-1__pict">
+							<picture>
+						         <source srcset="img/main1-phone.png" media="(max-width: 743px)" >
+						         <img src="img/main-1-mob.jpg" alt="">
+						    </picture>
 						</div>
+						<!-- <div class="container-mobile">
+						  <div><a href="#"><img src="img/change-display.png" alt=""></a></div>
+						  <div><a href="#"><img src="img/change-connect.png" alt=""></a></div>
+						</div> -->
+
+					</div>	
+					<div class="main-1__content">
+						<div class="main-1__mobile">
+							<p class="title">
+								Ремонт Apple iPhone 4s в Киеве
+							</p>
+							<div class="main-1__rating">
+								<span><img src="img/rait-star.png" alt=""></span>
+								<span><img src="img/rait-star.png" alt=""></span>
+								<span><img src="img/rait-star.png" alt=""></span>
+								<span><img src="img/rait-star.png" alt=""></span>
+								<span><img src="img/rait-star.png" alt=""></span>
+							</div>
+						</div>
+							
 						<div class="main-1__services">
 							<a href="#" class="main-1__link">
 								<img src="img/change-display.png" alt="">
@@ -172,6 +197,17 @@
 	</div>
 	<div class="main-3">
 			<div class="container">
+				<div class="main-3-mobile">
+					<div class="main-3-mobile__services">
+						<div class="main-3-container">
+							Все виды услуг
+						</div>
+					</div>
+					<div class="main-3-container">
+						<p>Замена дисплея c сенсорным экраном Apple iPhone 4</p>
+						<p>Замена самого защитного стекла, без полной замены дисплейного модуля.</p>
+					</div>
+				</div>
 				<table class="main-3__table" cellspacing="0">
 					<thead>
 						<tr>
@@ -337,6 +373,7 @@
 				</div>
 			</div>
 		</div>
+
 
 	</div>
 	<div class="main-5">
@@ -626,12 +663,11 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.fancybox.js"></script>
 	<script src="js/jquery.fancybox.pack.js"></script>
 	<script src="js/jquery.fancybox-buttons.js"></script>
 	<script src="js/jquery.fancybox-media.js"></script>
 	<script src="js/jquery.fancybox-thumbs.js"></script>
-	<script src="js/slick.min.js"></script>
-	
 </body>
 </html>

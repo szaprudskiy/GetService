@@ -17,7 +17,8 @@ button{
 html, body{
 	font: 14px 'OpenSansRegular', sans-serif;
 	color: #2e2e2e;
-	
+	overflow-x: hidden;
+
 }
 .container{
 	width: 100%;
@@ -70,15 +71,18 @@ html, body{
 	}
 	
 }
+.header-container-mobile{
+	display: flex;
+	align-items: center;
+}
 .contacts{
 	font-family: "RobotoRegular";
 	font-size: 12px;
 	color: #2e2e2e;
-	    padding-left: 20px;
 	&__img{
 		position: relative;
 		border-right: 2px solid #d5d5d5;
-		padding-right: 38px;
+		padding-right: 30px;
 		&:before{
 			content: "";
 			position: absolute;
@@ -96,6 +100,8 @@ html, body{
 	font-family: "RobotoRegular";
 	font-size: 12px;
 	color: #2e2e2e;
+	position: relative;
+    left: 20px;
 }
 .application{
 	font-size: 12px;
@@ -181,7 +187,6 @@ html, body{
 /* =======main-1========== */
 
 .main-1{
-	
 	&__top{
 		display: flex;
 		display: -webkit-flex;
@@ -262,6 +267,7 @@ html, body{
 		display: flex;
 		display: -webkit-flex;
 		align-items: center;
+		flex-wrap:wrap;
 		justify-content: space-between;
 		margin-bottom: 50px;
 		.title{
@@ -301,6 +307,7 @@ html, body{
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 	}
 	
@@ -524,7 +531,6 @@ html, body{
     	}
 	}
 }
-
 /* =======main-break========== */
 
 .main-break{
@@ -700,6 +706,7 @@ html, body{
     z-index: 2;
 }
  */
+
 /* ====FOOTER==== */
 
 .footer{
