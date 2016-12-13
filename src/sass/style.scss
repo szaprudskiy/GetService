@@ -54,6 +54,9 @@ html, body{
 	align-items: center;
 	flex-wrap: wrap;
 }
+.mobile-menu{
+	display: none ;
+}
 .info{
 	display: flex;
 	padding: 0 12px;
@@ -310,7 +313,9 @@ html, body{
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}
-	
+	.main-2__slider{
+		display: none;
+	}
 	&__option{
 		padding: 50px 22px;
 		text-align: center;
@@ -333,6 +338,9 @@ html, body{
 /* =======main-3========== */
 
 .main-3{
+	.main-3-mobile{
+		display: none;
+	}
 	&__table{
 		margin-top: 90px;
 		margin-bottom: 25px;
@@ -406,7 +414,9 @@ html, body{
 		display: -webkit-flex;
 		margin-bottom: 20px;
 	}
-
+	.dn{
+		display: none;
+	}
 	&__pict{
 		img{
 			position: relative;
@@ -547,7 +557,9 @@ html, body{
 		margin-top:35px;
 		margin-bottom: 75px;
 	}
-
+	.main-break__slider{
+		display: none;
+	}
 	&__link{
 		display: block;
 		text-align: center;
@@ -619,7 +631,7 @@ html, body{
 	}
 		 
 	&__next{
-		right: -35px;
+		right: -32px;
 		margin-left: 6px;
 		background: url(../img/model-arrow-r.png) no-repeat;
 		width: 30px;
@@ -637,7 +649,7 @@ html, body{
 		width: 30px;
 		height: 30px;
 		transform: rotate(180deg) ;
-		left: -35px;
+		left: -20px;
 		&:hover{
 		    background: url(../img/model-arrow-r-h.png) no-repeat;
 		    width: 30px;

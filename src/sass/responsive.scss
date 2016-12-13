@@ -1,12 +1,72 @@
 @media screen and (max-width: 743px){
+	.mobile-menu{
+		background: #2e2e2e;
+		position: absolute;
+		z-index: 1;
+		width: 100%;
+		top:0;
+		height: 620px;
+		.holder-mobile-menu{
+			padding: 85px 20px 0 20px;
+		}
+		.mobile-menu__list-info{
+			text-transform: uppercase;
+			border-bottom: 2px solid #434343;
+			li{
+				margin-bottom: 15px;
+				a{
+					color: #fff;
+					font-family: "RobotoRegular";
+					&:hover{
+						color: #c24639;
+					}
+				}
+			}
+		}
+		.mobile-menu__list-repairs{
+			margin-top: 10px;
+			border-bottom: 2px solid #434343;
+			li{
+				margin-bottom: 15px;
+				a{
+					color: #fff;
+					font-family: "RobotoRegular";
+					&:hover{
+						color: #c24639;
+					}
+				}
+			}
+
+		}
+		.application-mobile{
+			margin-top: 25px;
+			.application__link {
+    			padding: 10px 30px;
+  
+			}
+		}
+		.mobile-menu__check-button{
+			color: #fff;
+			margin-top: 25px;
+			display: block;
+			&:hover{
+				color: #c24639;
+			}
+		}
+
+	}
+	.burger__item span{
+		position: absolute;
+		z-index: 2;
+	}
 	.container{
-		max-width:  320px;
+		max-width:  320px !important;
 	}
 	.header-top{
-		padding: 0;
+		padding: 0 !important;
 	}
 	.header-df{
-		display: block;
+		display: block !important;
 		.logo{
 			display: flex;
     		justify-content: space-around;
@@ -14,6 +74,7 @@
     		border-bottom: 2px solid #d5d5d5;
     		padding: 10px 0;
     		.burger{
+    			 cursor: pointer;
     			&__item{
 				    position: relative;
 				    overflow: hidden;
@@ -27,7 +88,6 @@
 				    box-shadow: none;
 				    border-radius: none;
 				    border: none;
-				    cursor: pointer;
 				    background: none;
 				    span{
 				    	display: block;
@@ -110,13 +170,15 @@
 	}
 	.main-1__top{
 		position: relative;
-
+	}
+	.main-1__rating{
+		margin: 10px 0 0 5px;
 	}
 	.main-1__pict{
 		margin-top: 145px;
 	}
 	.main-1__services{
-		display: none;
+		display: none !important;
 	}
 	.main-1__mobile{
 		position: absolute;
@@ -126,6 +188,49 @@
 			font-size: 28px;
 		}
 	}
+	.main-2__body{
+		.main-2__option{
+			display: none;
+		}
+	}
+	.main-2__slider{
+		display: flex !important;
+		flex-wrap: wrap;
+	    justify-content: center;
+	    display: block ;
+	}
+	.main-2__text{
+		width: auto !important;
+		padding-left: 15px;
+	}
+	.slick-slide img{
+		display: inline-block;
+	}
+	.slick-prev, .slick-next{
+		background:none;
+		width: 30px;
+		height: 30px;
+		z-index: 3;
+		&:before{
+			display: none;
+		}
+	}
+
+	.slick-next {
+    	right: 10px;
+    	background-image: url("../img/model-arrow-r.png");
+    	&:hover{
+    		background-image: url("../img/model-arrow-r-h.png");
+    	}
+	}
+	.slick-prev {
+    	left: 13px;
+    	transform: rotate(180deg)  translateY(15px); 
+    	background-image: url("../img/model-arrow-r.png");
+    	&:hover{
+    		background-image: url("../img/model-arrow-r-h.png");
+    	}
+	}
 	
 	.main-1__bot .title{
 		font-size: 28px;
@@ -134,16 +239,88 @@
 		display: none;
 	}
 	.main-3-mobile{
+		display: block !important;
 		&__services{
 			font-family: "OpenSansBold";
-			padding: 24px 0;
+			padding: 24px 0 24px 20px;
 			background: #dbdbdb;
 		}
 	}
-	.main-3-container{
-		padding: 0 38px 0 21px;
+	.container-mobile-pad{
+		padding: 20px 38px 20px 20px;
 	}
+	.container-mobile-bg{
+		background: #f1f1f1;
+	}
+	.holder-price{
+		display: flex;
+		justify-content: space-between;
+		margin-top: 15px;
+	}
+	.dn{
+		display: block !important;
+	}
+	.holder-price__bold{
+		font-family: "OpenSansBold";
+	}
+	.main-4__body{
+		flex-wrap: wrap;
+	}
+	.main-4__content{
+		margin: 0 !important;
+		.title{
+			font-size: 21px;
+		}
+	}
+	.main-4__text{
+		display: none;
+	}
+	.main-4__square{
+		margin: 30px 0;
+		padding-left: 34px;
+		list-style-type: square;
+		li{
+			margin-bottom: 15px;
+			color: red;
+			span{
+				color: #2e2e2e;
+			}
+		}
+	}
+	.main4pict2{
+		padding: 30px 0;
+	}
+	.main-5__body{
+		flex-wrap: wrap;
+	}
+	.main-5__pict{
+		display: none;
+	}	
+	.popup-slider__container{
+		padding: 0 10px;
+		.popup-slider__prev{
+			top: 65%;
+    		left: 21px
+		}
+		.popup-slider__next{
+			right: 20px;
+			top: 65%;
+		}
+	}
+	.main-break__body{
+		display: none !important;
+	}
+	.main-break__slider{
+		display: block !important ;
 
+	}
+	.main-break__link p{
+		width: auto !important;
+	}
+	.footer-df{
+		justify-content: space-around !important;
+
+	}
 }
 
 
