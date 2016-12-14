@@ -17,7 +17,8 @@ button{
 html, body{
 	font: 14px 'OpenSansRegular', sans-serif;
 	color: #2e2e2e;
-	
+	overflow-x: hidden;
+
 }
 .container{
 	width: 100%;
@@ -53,6 +54,9 @@ html, body{
 	align-items: center;
 	flex-wrap: wrap;
 }
+.mobile-menu{
+	display: none ;
+}
 .info{
 	display: flex;
 	padding: 0 12px;
@@ -70,15 +74,18 @@ html, body{
 	}
 	
 }
+.header-container-mobile{
+	display: flex;
+	align-items: center;
+}
 .contacts{
 	font-family: "RobotoRegular";
 	font-size: 12px;
 	color: #2e2e2e;
-	    padding-left: 20px;
 	&__img{
 		position: relative;
 		border-right: 2px solid #d5d5d5;
-		padding-right: 38px;
+		padding-right: 30px;
 		&:before{
 			content: "";
 			position: absolute;
@@ -96,6 +103,8 @@ html, body{
 	font-family: "RobotoRegular";
 	font-size: 12px;
 	color: #2e2e2e;
+	position: relative;
+    left: 20px;
 }
 .application{
 	font-size: 12px;
@@ -258,7 +267,6 @@ html, body{
 /* =======main-1========== */
 
 .main-1{
-	
 	&__top{
 		display: flex;
 		display: -webkit-flex;
@@ -334,11 +342,14 @@ html, body{
 			}
 
 	}
-
+	.main-1__mobile-slick{
+		display: none;
+	}
 	&__bot{
 		display: flex;
 		display: -webkit-flex;
 		align-items: center;
+		flex-wrap:wrap;
 		justify-content: space-between;
 		margin-bottom: 50px;
 		.title{
@@ -381,9 +392,12 @@ html, body{
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 	}
-	
+	.main-2__slider{
+		display: none;
+	}
 	&__option{
 		padding: 50px 22px;
 		text-align: center;
@@ -406,6 +420,9 @@ html, body{
 /* =======main-3========== */
 
 .main-3{
+	.main-3-mobile{
+		display: none;
+	}
 	&__table{
 		margin: 0 auto;
 		margin-top: 90px;
@@ -480,7 +497,9 @@ html, body{
 		display: -webkit-flex;
 		margin-bottom: 20px;
 	}
-
+	.dn{
+		display: none;
+	}
 	&__pict{
 		img{
 			position: relative;
@@ -605,7 +624,6 @@ html, body{
     	}
 	}
 }
-
 /* =======main-break========== */
 
 .main-break{
@@ -622,7 +640,9 @@ html, body{
 		margin-top:35px;
 		margin-bottom: 75px;
 	}
-
+	.main-break__slider{
+		display: none;
+	}
 	&__link{
 		display: block;
 		text-align: center;
@@ -694,7 +714,7 @@ html, body{
 	}
 		 
 	&__next{
-		right: -35px;
+		right: -32px;
 		margin-left: 6px;
 		background: url(../img/model-arrow-r.png) no-repeat;
 		width: 30px;
@@ -712,7 +732,7 @@ html, body{
 		width: 30px;
 		height: 30px;
 		transform: rotate(180deg) ;
-		left: -35px;
+		left: -20px;
 		&:hover{
 		    background: url(../img/model-arrow-r-h.png) no-repeat;
 		    width: 30px;
@@ -781,6 +801,7 @@ html, body{
     z-index: 2;
 }
  */
+
 /* ====FOOTER==== */
 
 .footer{
