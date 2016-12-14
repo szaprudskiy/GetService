@@ -47,7 +47,7 @@
 		}
 		.mobile-menu__check-button{
 			color: #fff;
-			margin-top: 25px;
+			margin-top: 30px;
 			display: block;
 			&:hover{
 				color: #c24639;
@@ -179,14 +179,52 @@
 	}
 	.main-1__services{
 		display: none !important;
+
 	}
 	.main-1__mobile{
 		position: absolute;
 		top: 0;
 		left:0;
+		padding: 0 20px;
 		.title{
 			font-size: 28px;
 		}
+	}
+	.main-1__content{
+		width: 121px;
+	}
+	.main-1__mobile-slick{
+		display: block !important;
+		margin-top: 160px;
+	}
+	.main-1__link{
+		padding: 0px 6px !important;
+		border: none !important;
+		span{
+			display: block;
+			width: 120px !important;
+			
+		}
+	}
+	.slick-track{
+		margin-bottom: 10px;
+	}
+	.slick-dots{
+		margin-left: 0;
+	}
+	.slick-dots li button{
+		background: url(../img/dot.png) no-repeat;
+		width: 10px;
+		height: 10px;
+		border: none;
+		&:hover{
+			background: url(../img/dot-hover.png) no-repeat;
+			width: 10px;
+			height: 10px;
+		}
+	}
+	.main-1__link:nth-of-type(1), .main-1__link:nth-of-type(2), .main-1__link:nth-of-type(3), .main-1__link:nth-of-type(4){
+		border: none !important;
 	}
 	.main-2__body{
 		.main-2__option{
@@ -233,7 +271,8 @@
 	}
 	
 	.main-1__bot .title{
-		font-size: 28px;
+		font-size: 24px;
+		padding: 0 20px;
 	}
 	.main-3__table{
 		display: none;
@@ -295,6 +334,13 @@
 	}
 	.main-5__pict{
 		display: none;
+	}
+	.main-5__content{
+		margin-top: 25px !important;
+		padding: 0 20px;
+		.title{
+			font-size: 24px !important;
+		}
 	}	
 	.popup-slider__container{
 		padding: 0 10px;
@@ -316,6 +362,9 @@
 	}
 	.main-break__link p{
 		width: auto !important;
+	}
+	.photo-slider{
+		margin-top: 30px;
 	}
 	.footer-df{
 		justify-content: space-around !important;

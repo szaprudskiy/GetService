@@ -36,6 +36,21 @@ $(function(){
     }
   ]
 	})
+	$(".main-1__mobile-slick").slick({
+		 responsive: [
+    {
+      	breakpoint: 743,
+      	settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: false,
+        dots: true
+      }
+    }
+  ]
+	})
+	
 })
 
 $(document).ready(function() {

@@ -265,7 +265,9 @@ html, body{
 			}
 
 	}
-
+	.main-1__mobile-slick{
+		display: none;
+	}
 	&__bot{
 		display: flex;
 		display: -webkit-flex;
