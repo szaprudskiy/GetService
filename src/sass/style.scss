@@ -111,7 +111,7 @@ html, body{
 }
 .header-bot{
 	background: #2e2e2e;
-	overflow: hidden;
+/* 	overflow: hidden;   */
 	padding: 20px 0;
 }
 .header-bot-df{
@@ -124,21 +124,98 @@ html, body{
 
 	}
 	&__item{
-
+		position: relative;
 		border-right: 2px solid #434343;
-
+		&--drop{
+			&:hover{
+				 .nav-dropdown{
+					left: 8px;
+				}
+			}
+		}
 	}
 	&__link{
 		color: #fefefe;
 		font-family: "RobotoRegular";
-		padding: 20px 46px;
+		padding: 20px 43px;
 		&:hover{
 			color: #e74c3c;
-		}
-		
+		}	
+
 		
 	}
+
+	&-dropdown{
+		position: absolute;
+		background: #434343;
+		z-index: 2;
+		top: 39px;
+		left: -9999px;
+		opacity: 0.95;
+		padding-bottom: 10px;
+		&__item{
+			padding: 0 15px;
+    		width: 175px;
+    		position: relative;
+			&:hover{
+				background: #5d5d5d;	
+				color: #fff;
+			}
+
+    		&--drop{
+    			&:hover{
+    				.nav-submenu{
+						left: 205px;
+    				}
+    			}
+	  			&:before{
+		    			content: '';
+					    position: absolute;
+					    width: 7px;
+					    height: 12px;
+					    right: 15px;
+					    top: 15px;
+					    background: url(../img/ul-children-icon.png) no-repeat;
+	    			} 
+
+    		}
+		}
+
+		&__link{
+			background: none;
+    		display: block;
+   			padding: 10px 20px;
+   			color: #FFF;
+   			font-size: 14px;
+		}
+	}
+
+	&-submenu{
+		display: block;
+		position: absolute;
+		background: #434343;
+		left: -9999px;
+		top: 0px;
+		width: 650px;
+		opacity: 0.95;
+		&__item{
+			padding: 0 15px;
+    		width: 175px;
+    		display: inline-block;
+    		float: left;
+    		&:hover{
+    			background: #696969;
+    		}
+		}
+
+		&__link{
+			display: block;
+    		padding: 10px 20px;
+    		color: #fff;
+		}
+	}
 }
+
 .check-button{
 	&__link{
 		color: #fff;
@@ -287,6 +364,9 @@ html, body{
 		font-size: 14px;
 		border-radius: 44px;
 		margin-top:23px;
+		&:hover{
+			background: #da3423;
+		}
 	}
 }
 
@@ -327,9 +407,10 @@ html, body{
 
 .main-3{
 	&__table{
+		margin: 0 auto;
 		margin-top: 90px;
 		margin-bottom: 25px;
-		width: 100%;
+		width: 80%;
 		td, th{
 			text-align: left;
 			padding-top: 18px;
@@ -661,7 +742,7 @@ html, body{
 }
 .fancybox-close{
 	width: 30px;
-    height: 29px;
+    height: 30px;
 	top: -35px;
     right: -5px;
     background-image: url("../img/popup-galery-close.png") !important; 
