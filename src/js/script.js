@@ -18,10 +18,19 @@ $(function(){
   ]
 	});	
 	
-	$(".burger__item").click(function(){
-		$(".mobile-menu").fadeToggle();
 
+	
+	var burgerItem = $(".burger__upper, .burger__mid, .burger__lower");
+	var menu = $(".mobile-menu");
+
+
+	burgerItem.on("click", function(){
+		menu.fadeToggle();
+		burgerItem.toggleClass('cliked');	
 	})
+
+	
+
 	$(".main-2__slider, .main-break__slider").slick({
 		 responsive: [
     {
@@ -58,6 +67,8 @@ $(document).ready(function() {
 		$(' main').addClass('blur');
 		console.log('hello');
 	});*/
+	
+
 
 	$(".fancybox-thumb").fancybox({
 		prevEffect	: 'none',
