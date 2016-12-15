@@ -7,15 +7,15 @@
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/responsive.css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css">
 	<link rel="stylesheet" href="css/jquery.fancybox-buttons.css">
 	<link rel="stylesheet" href="css/jquery.fancybox-thumbs.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
 
 </head>
 <body>
-	 <header > 
+	<header > 
 		<div class="header-top">
 			<div class="container">
 				<div class="header-df">
@@ -26,10 +26,21 @@
 						         <img src="img/logo.png" alt="">
 						    </picture>
 						</a>
-						<div class="burger"><button class="burger__item"><span></span></button></div>
+						<div class="burger">
+							<button class="burger__item">
+								<span class="burger__upper"></span>
+								<span class="burger__mid"></span>
+								<span class="burger__lower"></span>
+							</button>
+						</div>
 					</div>
 					<div class="mobile-menu">
-						<div class="container">
+						<div class="mobile-menu-logo">
+							<a href="#">
+								<img src="img/logo-mobile.png" alt="">
+							</a>
+						</div>
+						<div class="container" id="main-mob-menu">
 							<div class="holder-mobile-menu">
 								<ul class="mobile-menu__list-info">
 									<li><a href="#">Акции</a></li>
@@ -37,8 +48,16 @@
 									<li><a href="#">Доставка</a></li>
 								</ul>
 								<ul class="mobile-menu__list-repairs">
-									<li><a href="#">Ремонт телефонов</a></li>
-									<li><a href="#">Ремонт планшетов</a></li>
+									<li>
+										<a href="#" class="mob-tel">
+											Ремонт телефонов
+										</a>
+									</li>
+									<li>
+										<a href="#" class="tablet">
+											Ремонт планшетов
+										</a>
+									</li>
 									<li><a href="#">Ремонт ноутбуков</a></li>
 									<li><a href="#">Магазин</a></li>
 									<li><a href="#">Обмен</a></li>
@@ -48,6 +67,120 @@
 								</div>
 								<a class="mobile-menu__check-button" href="#">Проверить статус</a>
 							</div>	
+						</div>
+						<div class="brand-menu" id="mob-brands">
+							<p class="brand-menu__title">
+								<a href="">Ремонт телефонов</a>
+							</p>	
+							<ul class="brand-menu__list">
+								<li class="brand-menu__item">
+									<a href="" class="brand-menu__link" id="iphone">
+										Apple iPhone
+									</a>
+								</li>
+								<li class="brand-menu__item">
+									<a href="" class="brand-menu__link">
+											Samsung
+									</a>
+								</li>
+								<li class="brand-menu__item">
+									<a href="" class="brand-menu__link">
+										Lenovo
+									</a>
+								</li>
+								<li class="brand-menu__item">
+									<a href="" class="brand-menu__link">
+										LG
+									</a>
+								</li>
+								<li class="brand-menu__item">
+									<a href="" class="brand-menu__link">
+										Nokia
+									</a>
+								</li>
+								<li class="brand-menu__item">
+									<a href="" class="brand-menu__link">
+										Sony
+									</a>
+								</li>
+								<li class="brand-menu__item">
+									<a href="" class="brand-menu__link">
+										Huawei
+									</a>
+								</li>
+								<li class="brand-menu__item">
+									<a href="" class="brand-menu__link">
+										Meizu
+									</a>
+								</li>
+								<li class="brand-menu__item">
+									<a href="" class="brand-menu__link">
+										MI Xiaomi
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="model-menu" id="mob-models">
+							<p class="model-menu__title">
+								<a href="">Apple iPhone</a>
+							</p>	
+							<ul class="model-menu__list">
+								<li class="model-menu__item">
+									<a href="" class="model-menu__link">
+										iPhone 4
+									</a>
+								</li>
+								<li class="model-menu__item">
+									<a href="" class="model-menu__link">
+											iPhone 4S
+									</a>
+								</li>
+								<li class="model-menu__item">
+									<a href="" class="model-menu__link">
+										iPhone 5
+									</a>
+								</li>
+								<li class="model-menu__item">
+									<a href="" class="model-menu__link">
+										iPhone 5C
+									</a>
+								</li>
+								<li class="model-menu__item">
+									<a href="" class="model-menu__link">
+										iPhone 5S
+									</a>
+								</li>
+								<li class="model-menu__item">
+									<a href="" class="model-menu__link">
+										iPhone 6
+									</a>
+								</li>
+								<li class="model-menu__item">
+									<a href="" class="model-menu__link">
+										iPhone 6 Plus
+									</a>
+								</li>
+								<li class="model-menu__item">
+									<a href="" class="model-menu__link">
+										iPhone 6S
+									</a>
+								</li>
+								<li class="model-menu__item">
+									<a href="" class="model-menu__link">
+										iPhone 6S Plus
+									</a>
+								</li>
+								<li class="model-menu__item">
+									<a href="" class="model-menu__link">
+										iPhone 7
+									</a>
+								</li>
+								<li class="model-menu__item">
+									<a href="" class="model-menu__link">
+										Ремонт iPhone 7
+									</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 						<ul class="info">
@@ -320,7 +453,7 @@
 						<a  class="tree__link">Ремонт телефонов Apple iPhone</a>
 					</li>
 				</ul>
-				<a  class="tree__link">Ремонт телефонов Apple iPhone</a>
+				<a  class="tree__link--mobile">Ремонт телефонов Apple iPhone</a>
 			</div>
 			<div class="main-1">
 				<div class="main-1__top">
@@ -410,7 +543,7 @@
 				<div class="main-1__bot">
 					<p class="title">
 						<img src="img/persent-icon.png" alt="">
-						При записи получите СКИДКУ - 5%!
+						<span class="title__text">При записи получите СКИДКУ - 5%!</span>
 					</p>
 
 					<a href="#" class="main-1__btn">
@@ -714,7 +847,10 @@
 		<div class="container">
 			<div class="main-4__body">
 				<div class="main-4__pict">
-					<img src="img/main4pict.png" alt="">
+					<picture>
+						         <source srcset="img/main4-pict-mob.png" media="(max-width: 743px)" >
+						         <img src="img/main4pict.png" alt="">
+						</picture>
 								
 				</div>
 				<div class="main-4__content">
@@ -732,23 +868,7 @@
 						<p class="main-4__text">
 							Наши квалифицированные сотрудники помогут заменить стекло iphone 4, исправить работу сенсора, отремонтировать кнопки, избавить смартфон от попавшей внутрь жидкости, а также провести диагностику айфона 4 и оценить его общее состояние.
 						</p>
-						<div class="dn">
-							<p class="main-4__text-mobile">
-								iPhone 4 имеет свой неповторимый дизайн. Это творение Джобса, которое отличается от предыдущих и последующих яблочных гаджетов своими техническими особенностями. Операционная система, безусловно, была заявлена, как мощная, и, надо отдать должное, производители выполнили свои обещания. Однако, ни один механизм не может функционировать без сбоев, потому Айфон 4 не исключение. Масса возможностей (игры, приложения, утилиты, камера) порождают и массу проблем. Но вы можете не беспокоиться о дальнейшем будущем вашего телефона, поскольку Get service исправит любую проблему, которая с ним приключилась.
-
-							</p>
-							<ul class="main-4__square">
-								<li><span>Phone 4 имеет свой неповторимый дизайн. Это творение Джобса,</span></li>
-								<li><span>Phone 4 имеет свой неповторимый дизайн. Это творение Джобса,</span></li>
-								<li><span>Операционная система</span></li>
-								<li><span>Однако, ни один механизм не  потому Айфон 4 не исключение.</span></li>
-							</ul>
-							<p>iPhone 4 имеет свой неповторимый дизайн. Это творение Джобса, которое отличается от предыдущих и последующих яблочных гаджетов своими техническими особенностями. Операционная система, безусловно, была заявлена, как мощная, и, надо отдать должное, производители выполнили свои обещания. Однако, ни один механизм не может функционировать без сбоев, потому Айфон 4 не исключение. Масса возможностей (игры, приложения, утилиты, камера) порождают и массу проблем. Но вы можете не беспокоиться о дальнейшем будущем вашего телефона, поскольку Get service исправит любую проблему, которая с ним приключилась.
-							</p>
-							<p class="main4pict2"><img src="img/main4pict2.png" alt=""></p>	
-							<p>iPhone 4 имеет свой неповторимый дизайн. Это творение Джобса, которое отличается от предыдущих и последующих яблочных гаджетов своими техническими особенностями. Операционная система, безусловно, была заявлена, как мощная, и, надо отдать должное, производители выполнили свои обещания. Однако, ни один механизм не может функционировать без сбоев, потому Айфон 4 не исключение. Масса возможностей (игры, приложения, утилиты, камера) порождают и массу проблем. Но вы можете не беспокоиться о дальнейшем будущем вашего телефона, поскольку Get service исправит любую проблему, которая с ним приключилась.
-							</p>
-						</div>	
+						
 					</div>					
 				</div>
 			</div>
@@ -1134,9 +1254,6 @@
 			</div>
 		</div>
 	</footer>
-<!-- 	<div class="popup-gallery__back">
-	
-</div> -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>

@@ -50,7 +50,7 @@ html, body{
 }
 .header-df{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
 }
@@ -127,6 +127,8 @@ html, body{
 	display: flex;
 }
 .nav{
+	margin-left: -45px;
+	margin-right: 45px;
 	&__list{
 	display: flex;
 	justify-content: flex-start;	
@@ -260,6 +262,10 @@ html, body{
 		color: #2e2e2e;
 		&:hover{
 			color: #000;
+		}
+
+		&--mobile{
+			display: none;
 		}
 	}
 }
@@ -714,7 +720,7 @@ html, body{
 	}
 		 
 	&__next{
-		right: -32px;
+		right: -37px;
 		margin-left: 6px;
 		background: url(../img/model-arrow-r.png) no-repeat;
 		width: 30px;
@@ -732,7 +738,7 @@ html, body{
 		width: 30px;
 		height: 30px;
 		transform: rotate(180deg) ;
-		left: -20px;
+		left: -30px;
 		&:hover{
 		    background: url(../img/model-arrow-r-h.png) no-repeat;
 		    width: 30px;

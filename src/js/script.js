@@ -1,27 +1,34 @@
+$(function(){
+		var burgerItem = $(".burger__upper, .burger__mid, .burger__lower");
+ 		var menu = $(".mobile-menu");
 
+
+	 	burgerItem.on("click", function(){
+	  	menu.fadeToggle();
+	  	burgerItem.toggleClass('cliked'); 
+ 		})	
+	});
 $(function(){
 	$('.models-slider .slider').slick({
-	  infinite: true,
-	  arrows: true,
-	  dots: false,
-	  slidesToShow: 4,
-	  slidesToScroll: 1,
-	  responsive: [
-    {
-      breakpoint: 743,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true
-      }
-    }
-  ]
+		  infinite: true,
+		  arrows: true,
+		  dots: false,
+		  slidesToShow: 4,
+		  slidesToScroll: 1,
+		  responsive: [
+	    {
+	      breakpoint: 743,
+	      settings: {
+	        slidesToShow: 1,
+	        slidesToScroll: 1,
+	        infinite: true
+	      }
+	    }
+	  ]
 	});	
 	
-	$(".burger__item").click(function(){
-		$(".mobile-menu").fadeToggle();
+	
 
-	})
 	$(".main-2__slider, .main-break__slider").slick({
 		 responsive: [
     {
@@ -49,15 +56,34 @@ $(function(){
       }
     }
   ]
-	})
+	});
+	$('.mob-tel, .tablet').click(function(e){
+		e.preventDefault();
+		$('#main-mob-menu').hide();
+		$('#mob-brands').show();
+	});
+	$('.brand-menu__title a').click(function(e){
+		e.preventDefault();
+		$('#main-mob-menu').show();
+		$('#mob-brands').hide();
+	});
+	$('#iphone').click(function(e){
+		e.preventDefault();
+		$('#main-mob-menu').hide();
+		$('#mob-brands').hide();
+		$('#mob-models').show();
+	});
+	$('.model-menu__title').click(function(e){
+		e.preventDefault();
+		$('#mob-brands').show();
+		$('#mob-models').hide();
+	});
 	
-})
+});
+
+
 
 $(document).ready(function() {
-/*	$('.fancybox-thumb').click(function(){
-		$(' main').addClass('blur');
-		console.log('hello');
-	});*/
 
 	$(".fancybox-thumb").fancybox({
 		prevEffect	: 'none',
