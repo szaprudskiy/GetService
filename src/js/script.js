@@ -1,13 +1,4 @@
-$(function(){
-		var burgerItem = $(".burger__upper, .burger__mid, .burger__lower");
- 		var menu = $(".mobile-menu");
 
-
-	 	burgerItem.on("click", function(){
-	  	menu.fadeToggle();
-	  	burgerItem.toggleClass('cliked'); 
- 		})	
-	});
 $(function(){
 	$('.models-slider .slider').slick({
 		  infinite: true,
@@ -84,7 +75,16 @@ $(function(){
 
 
 $(document).ready(function() {
+	$(function(){
+		var burgerItem = $(".burger__upper, .burger__mid, .burger__lower");
+ 		var menu = $(".mobile-menu");
+ 		var burger = $('.burger');
 
+	 	burger.on("click", function(){
+	  	menu.fadeToggle();
+	  	burgerItem.toggleClass('cliked'); 
+ 		})	
+	});
 	$(".fancybox-thumb").fancybox({
 		prevEffect	: 'none',
 		nextEffect	: 'none',

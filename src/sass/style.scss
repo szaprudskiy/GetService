@@ -354,7 +354,12 @@ html, body{
 	&__bot{
 		display: flex;
 		display: -webkit-flex;
+		-webkit-align-items: center;
 		align-items: center;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
 		flex-wrap:wrap;
 		justify-content: space-between;
 		margin-bottom: 50px;
@@ -383,6 +388,12 @@ html, body{
 		margin-top:23px;
 		&:hover{
 			background: #da3423;
+		}
+	}
+
+	&__img{
+		&--mob{
+			display: none;
 		}
 	}
 }
@@ -499,6 +510,8 @@ html, body{
 .main-4{
 
 	&__body{
+		display: -webkit-box;
+		display: -webkit-flex;
 		display: flex;
 		display: -webkit-flex;
 		margin-bottom: 20px;
@@ -526,6 +539,12 @@ html, body{
 	&__text{
 		padding: 15px 0;
 		line-height: 1.5;
+	}
+
+	&__image{
+		&--mob{
+			display: none;
+		}
 	}
 }
 
