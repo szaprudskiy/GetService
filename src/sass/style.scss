@@ -45,6 +45,10 @@ html, body{
 }
 
 /* ====HEADER==== */
+.burger{
+	display: none;
+}
+
 .header-top{
 	padding: 18px 0;
 }
@@ -510,7 +514,7 @@ html, body{
 .main-4{
 
 	&__body{
-		display: -webkit-box;
+		display: -webkit-box;	
 		display: -webkit-flex;
 		display: flex;
 		display: -webkit-flex;
