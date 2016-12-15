@@ -79,6 +79,7 @@
     		.burger{
     				display: block;
     			 cursor: pointer;
+
     			&__item{
 				    position: relative;
 				    overflow: hidden;
@@ -92,6 +93,7 @@
 				    box-shadow: none;
 				    border-radius: none;
 				    border: none;
+
 				    background: none;
     			}
 
@@ -127,6 +129,7 @@
 			         height: 2px;
 			         background: #ff0000;
 			    }
+
     		}
 		}
 		.info{
@@ -141,6 +144,7 @@
 			}
 		}
 		.header-container-mobile {
+
     		display: -webkit-flex;
     		display: flex;
     		/* -webkit-box-pack: justify;
@@ -158,6 +162,7 @@
 	.header-bot{
 		display: none;
 	}
+
 
 /* ===========brand-menu============= */
 	#mob-brands{
@@ -245,12 +250,14 @@
 	}
 
 /* =============main================== */
+
 	.tree{
 		border-bottom: 2px solid #d5d5d5;
 		.tree__list{
 			display: none;
 		}
 	}
+
 	.mobile-menu-logo{
   		 margin: 10px 0 0 34px;
   	}
@@ -270,6 +277,7 @@
 	}
 	.main-1__top{
 		position: relative;
+
 	}
 	
 	.main-1{
@@ -308,6 +316,7 @@
 		margin-top: 145px;
 	}
 	.main-1__services{
+
 		display: none !important;
 
 	}
@@ -423,7 +432,6 @@
 	.main-3__table{
 		display: none;
 	}
-	
 	.main-3__bot .bot-text{
 		padding-left: 20px;
 		padding-right: 20px;
@@ -597,3 +605,4 @@
 		}
 	} 
 } 
+
