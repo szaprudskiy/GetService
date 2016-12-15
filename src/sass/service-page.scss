@@ -1,3 +1,5 @@
+
+/* =================desk==================== */
 /* ========main-1======== */
 
 .main-1{
@@ -24,6 +26,9 @@
 	&__text{
 		padding-right: 50px;
 		line-height: 1.5;
+		&--mob{
+			display: none;		
+		}
 	}
 }
 
@@ -56,4 +61,53 @@
 			}
 		}
 	}
+}
+/* =================desk==================== */
+@media screen and (max-width: 743px){
+/* ===========main-1============= */
+	.main-1{
+		&__text{
+			display: none;
+			&--mob{
+				display: block;
+				padding: 0 20px;
+			}
+		}
+		
+
+		&__desc{
+			margin-top: 160px;
+			border: none;
+		}
+
+		&__content{
+			width: 155px !important;
+
+		}
+
+		&__param-p{
+			display: block;
+			padding-bottom: 25px;
+		}
+	}
+/* ===========main-5============= */
+	.main-4{
+		&__text{
+			display: none;
+		}
+
+		&__content2{
+			display: none;
+		}
+
+		&__content{
+			padding: 0 20px;
+		}
+
+		.dn{
+
+		}
+	}
+
+
 }
