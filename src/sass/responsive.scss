@@ -38,6 +38,7 @@
 			}
 
 		}
+
 		.application-mobile{
 			margin-top: 25px;
 			.application__link {
@@ -60,7 +61,7 @@
 		z-index: 2;
 	}
 	.container{
-		max-width:  320px ;
+		max-width:  414px;
 	}
 	.header-top{
 		padding: 0 !important;
@@ -564,8 +565,20 @@
 	}
 	.footer-df{
 		justify-content: space-around !important;
-
-
+	}
+	.left{
+		width: 743px;
+		
+	}
+	.left__holder{
+		width: 245px;
+			margin: 0 auto;
+	}
+	.repairs{
+			padding: 32px 20px 0 20px ;
+		}
+	.footer-contacts{
+		padding-left: 22px;
 	}
 
 /* ========fancybox======== */
