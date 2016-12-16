@@ -58,6 +58,11 @@ html, body{
 	align-items: center;
 	flex-wrap: wrap;
 }
+.logo{
+	&__img-mobile{
+		display: none;
+	}
+}
 .mobile-menu{
 	display: none ;
 }
@@ -102,7 +107,6 @@ html, body{
 		
 	}
 }
- 
 .adress{
 	text-align: center;
 	font-family: "RobotoRegular";
@@ -744,7 +748,6 @@ html, body{
 	}
 		 
 	&__next{
-		right: -32px;
 		right: -37px;
 		margin-left: 6px;
 		background: url(../img/model-arrow-r.png) no-repeat;
@@ -763,7 +766,6 @@ html, body{
 		width: 30px;
 		height: 30px;
 		transform: rotate(180deg) ;
-		left: -20px;
 		left: -30px;
 		&:hover{
 		    background: url(../img/model-arrow-r-h.png) no-repeat;

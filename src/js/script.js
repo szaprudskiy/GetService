@@ -1,33 +1,6 @@
 
 $(function(){
 	$('.models-slider .slider').slick({
-	  infinite: true,
-	  arrows: true,
-	  dots: false,
-	  slidesToShow: 4,
-	  slidesToScroll: 1,
-	  responsive: [
-    {
-      breakpoint: 743,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true
-      }
-    }
-  ]
-	});	
-	
-
-	
-	var burgerItem = $(".burger__upper, .burger__mid, .burger__lower");
-	var menu = $(".mobile-menu");
-
-
-	burgerItem.on("click", function(){
-		menu.fadeToggle();
-		burgerItem.toggleClass('cliked');	
-	})
 		  infinite: true,
 		  arrows: true,
 		  dots: false,
@@ -100,49 +73,8 @@ $(function(){
 });
 
 
-	
-
-	$(".main-2__slider, .main-break__slider").slick({
-		 responsive: [
-    {
-      	breakpoint: 743,
-      	settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        arrows: true,
-        infinite: true
-      }
-    }
-  ]
-	})
-	$(".main-1__mobile-slick").slick({
-		 responsive: [
-    {
-      	breakpoint: 743,
-      	settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        arrows: false,
-        dots: true
-      }
-    }
-  ]
-	})
-	
-})
 
 $(document).ready(function() {
-
-/*	$('.fancybox-thumb').click(function(){
-		$(' main').addClass('blur');
-		console.log('hello');
-	});*/
-	
-
-
-
 	$(function(){
 		var burgerItem = $(".burger__upper, .burger__mid, .burger__lower");
  		var menu = $(".mobile-menu");
